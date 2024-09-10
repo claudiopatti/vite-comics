@@ -5,6 +5,58 @@
   export default {
   data() {
     return { 
+        titleHeader: [
+            {
+                title: 'CHARACTERS',
+                url: '#',
+                active: false,
+            },
+            {
+                title: 'CHARACTERS',
+                url: '#',
+                active: false,
+            },
+            {
+                title: 'CHARACTERS',
+                url: '#',
+                active: false,
+            },
+            {
+                title: 'CHARACTERS',
+                url: '#',
+                active: false,
+            },
+            {
+                title: 'CHARACTERS',
+                url: '#',
+                active: false,
+            },
+            {
+                title: 'CHARACTERS',
+                url: '#',
+                active: false,
+            },
+            {
+                title: 'CHARACTERS',
+                url: '#',
+                active: false,
+            },
+            {
+                title: 'CHARACTERS',
+                url: '#',
+                active: false,
+            },
+            {
+                title: 'CHARACTERS',
+                url: '#',
+                active: false,
+            },
+            {
+                title: 'CHARACTERS',
+                url: '#',
+                active: false,
+            },
+        ]
         
     }
   },
@@ -310,7 +362,39 @@
         </section>
 
         <section class="secondSectionFooter">
-            <div>
+            <div class="container">
+                <div class="buttonFooter">
+                    <button>
+                        SING-UP NOW!
+                    </button>
+                </div>
+
+                <div class="iconeFooter">
+                    <h3>
+                        FOLLOW US
+                    </h3>
+
+                    <a href="#">
+                        <img src="/img/footer-facebook.png" alt="">
+                    </a>
+
+                    <a href="#">
+                        <img src="/img/footer-twitter.png" alt="">
+                    </a>
+
+                    <a href="#">
+                        <img src="/img/footer-youtube.png" alt="">
+                    </a>
+
+                    <a href="#">
+                        <img src="/img/footer-pinterest.png" alt="">
+                    </a>
+
+                    <a href="#">
+                        <img src="/img/footer-periscope.png" alt="">
+                    </a>
+
+                </div>
 
             </div>
 
@@ -356,7 +440,7 @@ header .container {
 .infoHeader ul li a {
     text-decoration: none;
     color: black;
-    padding-left: 25px;
+    margin-left: 25px;
     display: inline-block;
     font-size: 10px;
 
@@ -458,6 +542,7 @@ header .container {
 .listInfoFooter ul li a {
     text-decoration: none;
     color: #8c8d8d;
+    font-size: 15px
 }
 
 .listInfoFooter ul li  {
@@ -466,5 +551,41 @@ header .container {
 
 .fistSectionFooter .container img{
     width: 400px;
+}
+
+.secondSectionFooter {
+    background-color: #303030;
+}
+
+.secondSectionFooter .container{
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttonFooter button{
+    background-color: #303030;
+    color: white;
+    padding: 10px;
+    border: 2px solid #0282f9;
+    font-weight: bold;
+}
+
+.iconeFooter {
+    display: flex;
+    align-items: center;
+}
+
+.iconeFooter h3 {
+    color: #0282f9;
+    font-size: 15px;
+}
+
+.iconeFooter a {
+    padding-left: 15px;
+}
+
+.iconeFooter a img {
+    width: 25px;
 }
 </style>
