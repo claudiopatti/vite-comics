@@ -76,6 +76,7 @@ export default {
                         <a :href="title.url">
                             {{title.title}}
                         </a>
+                        
                     </li>
                     <!-- <li id="active">
                         <a href="#" >
@@ -172,10 +173,9 @@ header .container {
 
             }
         }
-
-        .active a {
+        
+        .active a{
             color: #0282f9;
-            height: 100%;
             border-bottom: 5px solid #0282f9;
         }
     }
