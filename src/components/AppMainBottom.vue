@@ -36,7 +36,7 @@ export default {
 </script>
 
 <template>
-    <section class="secondSectionMain">
+    <section class="sectionMainBottom">
             <div class="container">
                 <div class="infoMain">
                     <ul>
@@ -97,7 +97,7 @@ export default {
     display: flex;
 }
 
-.secondSectionMain {
+.sectionMainBottom {
     background-color: #0282f9;
 
     .container {
