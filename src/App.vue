@@ -35,16 +35,9 @@ import AppFooter from './components/AppFooter.vue';
 
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 
-/* general */
-
-
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-}
-
+@use 'assets/scss/partials/reset' as *;
+@use 'assets/scss/main' as *;
 
 </style>

@@ -92,13 +92,13 @@ export default {
 
 
 .container {
-    max-width: 1000px;
-    margin: 0 auto;
     display: flex;
 }
 
 .sectionMainBottom {
     background-color: #0282f9;
+    position: relative;
+    z-index: 1;
 
     .container {
         justify-content: space-around;

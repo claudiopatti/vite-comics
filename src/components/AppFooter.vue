@@ -122,6 +122,18 @@ export default {
                 title: 'DC Power Visa',
                 url: '#',
             }
+        ],
+        shopFooter: [
+            {
+                title: 'Shop DC',
+                url: '#',
+                active: false,
+            },
+            {
+                title: 'Shop Dc Collectibles',
+                url: '#',
+                active: false,
+            },
         ]
       };
     }
@@ -180,9 +192,9 @@ export default {
                             SHOP
                         </h3>
                         <ul>
-                            <li>
-                                <a href="#">
-                                    Shop DC
+                            <li v-for="(shop, index) in shopFooter" :key="index">
+                                <a :href="shop.url">
+                                    {{ shop.title }}
                                 </a>
                             </li>
                             <li>
@@ -300,8 +312,9 @@ export default {
                     </div>
                 </div>
     
-
-                <img src="/img/dc-logo-bg.png" alt="">
+                <div class="dcLogoFotterBg">
+                    <img src="/img/dc-logo-bg.png" alt="">
+                </div>
 
             </div>
         </section>
@@ -369,9 +382,16 @@ export default {
         padding: 30px 0;
         display: flex;
         justify-content: space-between;
+        position: relative;
 
-        img{
-            width: 400px;
+        .dcLogoFotterBg {
+            position: absolute;
+            top: -25px;
+            left: 550px;
+            img {
+                width: 500px;
+            }
+
         }
 
         .containerListInfofooter {
@@ -407,11 +427,14 @@ export default {
 
 .secondSectionFooter {
     background-color: #303030;
+    position: relative;
+    z-index: 1;
 
     .container{
         padding: 20px 0;
         justify-content: space-between;
         align-items: center;
+        
 
         .buttonFooter button{
             background-color: #303030;

@@ -127,13 +127,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-/* general */
-
-
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-}
 
 
 /* main  */
